@@ -3,11 +3,9 @@
   padding-bottom: 64px;
 }
 
-.maxWidthWrapper {
-}
-
 .header {
   padding-bottom: 64px;
+  width: 65%;
 }
 
 .title {
@@ -24,7 +22,34 @@
 }
 
 .characterWrapper {
+  position: fixed;
+  top: 12%;
+  right: 5%;
+  bottom: 15%;
+  min-height: 500px;
 }
 
 .controlColumn {
+  width: 50%;
+  isolation: isolate;
+}
+
+@media (max-width: 1250px) {
+  .controlColumn {
+    display: flex;
+    flex-direction: row;
+    isolation: isolate;
+    overflow-x: auto;
+    width: 100%;
+    gap: 1rem;
+  }
+}
+
+.perspective {
+  isolation: isolate;
+  width: 100%;
+  position: fixed;
+  top: 50%;
+  bottom: 0;
+  background-color: hsl(195deg, 20%, 86%);
 }
