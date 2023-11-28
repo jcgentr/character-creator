@@ -23,22 +23,20 @@
 
 .characterWrapper {
   position: fixed;
-  top: 12%;
-  right: 5%;
-  bottom: 15%;
+  top: 8%;
+  left: 60%;
+  bottom: 5%;
   min-height: 500px;
 }
 
 .controlColumn {
   width: 50%;
-  isolation: isolate;
 }
 
-@media (max-width: 1250px) {
+@media (max-width: 750px) {
   .controlColumn {
     display: flex;
     flex-direction: row;
-    isolation: isolate;
     overflow-x: auto;
     width: 100%;
     gap: 1rem;
@@ -46,10 +44,13 @@
 }
 
 .perspective {
-  isolation: isolate;
   width: 100%;
   position: fixed;
-  top: 50%;
+  top: 60%;
   bottom: 0;
   background-color: hsl(195deg, 20%, 86%);
+}
+
+.maxWidthWrapper {
+  position: relative;
 }
